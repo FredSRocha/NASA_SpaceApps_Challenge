@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover"/>
+	<title>Axios | Nasa Space Apps</title>
+	<meta name="description" content=" -- 50-160 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, elit. Lorem ipsum dolor sit amet, consectetur adipiscing dolor ipsum ipsum."/>
+	<meta name="keywords" content=" -- 10 -- lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, dolor, sit, amet"/>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+	<link rel="canonical" href="https://axios.jusblog.com/"/>
+	<script assync="">if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){/*console.log("Service Worker Registered.")*/})})}</script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#7b7b7b">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Apollo 22">
+	<meta name="application-name" content="Apollo 22">
+	<meta name="msapplication-TileColor" content="#111827">
+	<meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
+	<meta name="theme-color" content="#111827">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="msapplication-starturl" content="/index.html">
+	<meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+	<link href="/assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/assets/img/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/assets/img/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+	<link href="/assets/img/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+	<link href="/assets/img/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/assets/img/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+	<link href="/assets/img/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/assets/img/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/assets/img/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="/assets/img/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<script src="dist/constellation_sketcher.bundle.js"></script>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/scripts.js"></script>
+</head>
+<body onload="ConstellationSketcher.setConstellation('Orion').sketch()">
+	<main>
+		<h3 id="title" class="title display-1">What is art for you?</h3>
+		<div id="container">
+			<div>
+				<h6 id="subtitle" style="text-align: center"></h6>
+				<canvas
+					id="constellation-sketcher"
+					width="500"
+					height="500"
+				></canvas>
+			</div>
+			<div style="display: flex; flex-direction: column; justify-content: center;"class="controls">
+				<div class="control-row">
+					<select
+						class="custom-select"
+						id="constellationSelector"
+					></select>
+					<script>
+						const selector = document.getElementById("constellationSelector");
+						populateSelector(selector);
+					</script>
+				</div>
+				<div class="control-row">
+					<button
+						type="button"
+						class="btn btn-primary btn-block"
+						onclick="setConfiguration(); ConstellationSketcher.sketch();"
+					><b>Play</b></button>
+				</div>
+				<div class="control-row">
+					<a
+						href="a-historic-brazilian-constellation/index.html"
+						type="button"
+						class="btn btn-success btn-block">
+						<b>Enter</b>
+					</a>
+				</div>
+				<footer class="copyright">
+					<p class="text-center">
+						<img src="assets/img/brand/nasa/space-apps/svg/Colorway=2-Color White.svg" width="128px" alt="Nasa Space Apps BH">
+						<br />
+						<span><em>&copy; Axios 2022</em></span>
+					</p>
+				</footer>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Barlow";
+  src: url(../fonts/Barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Barlow Bold';
+  src: url(../fonts/Barlow/Barlow-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  src: url(../fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Expletus Sans Bold Italic";
+  src: url(../fonts/Expletus_Sans/static/ExpletusSans-BoldItalic.ttf);
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  max-width: 768px;
+  margin: auto;
+}
+
+header h1 { 
+  font-family: "Barlow Bold";
+  padding: 1em;
+}
+
+p { font-family: "Titillium Web"; }
+
+aside form {
+  max-width: 568px;
+  margin: auto;
+}
+
+.axios-review footer,
+.explanation,
+section,
+aside,
+h1 {
+  padding:5px;
+  margin:5px;
+}
+
+#apod_img_id { width: 100%; }
+
+.explanation{ text-align: justify; }
+
+a { word-break: break-all; }
+
+.author {
+  margin: 2em auto 1em;
+  width: fit-content;
+}
+
+footer.copyright {
+  line-height: 2.5;
+  padding: 0 0 1.5em;
+}
+
+footer.copyright p {
+  font-family: "Expletus Sans Bold Italic", cursive;
+  margin-top: 2em;
+  font-size: 16px;
+}
